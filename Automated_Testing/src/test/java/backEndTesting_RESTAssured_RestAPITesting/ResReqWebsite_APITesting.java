@@ -1,7 +1,6 @@
-package restAssured_RestAPITesting;
+package backEndTesting_RESTAssured_RestAPITesting;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
@@ -9,7 +8,7 @@ import org.testng.annotations.Test;
 public class ResReqWebsite_APITesting {
 	
 	@Test
-	void getSingleUser() {
+	public static void getSingleUser() {
 		given()
 		
 		.when()
@@ -17,7 +16,7 @@ public class ResReqWebsite_APITesting {
 		
 		.then()
 			.statusCode(200)
-			.body("page", equalTo(2))
+			.body("data.id", equalTo(2))
 			.log().all();
 	}
 }

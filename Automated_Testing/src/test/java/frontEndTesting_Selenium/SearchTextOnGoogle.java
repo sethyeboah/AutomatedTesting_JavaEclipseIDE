@@ -1,4 +1,4 @@
-package modularScripts.googleSearch;
+package frontEndTesting_Selenium;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +18,7 @@ public class SearchTextOnGoogle {
 	@Test
 	public static void searchInGoogleSearchBox() {
 		// Define the web driver to use - Not needed if using WebDriverManager
-		//System.setProperty("webdriver.chrome.driver","C:\\Git Repositories\\AutomatedTesting_JavaEclipseIDE\\Automated_Testing\\resources\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver","C:\\Git Repositories\\AutomatedTesting_JavaEclipseIDE\\Automated_Testing\\resources\\chromedriver.exe");
 		
 		// Open a new instance of Chrome
 		WebDriver driver = new ChromeDriver();
